@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>RS Design טופס עיצוב</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        input, select, textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        button {
+            background-color: black;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        img {
+            max-width: 120px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="logo.png" alt="RS Logo">
+    <h2>RS Design - טופס עיצוב</h2>
+    <form>
+        <label>שם מלא</label>
+        <input type="text" placeholder="הכנס את שמך המלא" required>
+
+        <label>תאריך</label>
+        <input type="date" required>
+
+        <label>סגנון עיצוב</label>
+        <select required>
+            <option value="קיצי">קיצי</option>
+            <option value="שחור לבן">שחור לבן</option>
+            <option value="וינטג׳">וינטג׳</option>
+            <option value="רוקיסטי">רוקיסטי</option>
+        </select>
+
+        <label>מיקום הדפס</label>
+        <select required>
+            <option value="קדמי">קדמי</option>
+            <option value="אחורי">אחורי</option>
+            <option value="שניהם">שניהם</option>
+        </select>
+
+        <label>תיאור מפורט לעיצוב</label>
+        <textarea rows="4" placeholder="כתוב כאן את כל מה שחשוב לך בפרומפט" required></textarea>
+
+        <label>העלאת תמונה להשראה (אופציונלי)</label>
+        <input type="file" accept="image/*">
+
+        <button type="submit">שלח</button>
+    </form>
+</div>
+</body>
+</html>
